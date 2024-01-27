@@ -59,3 +59,11 @@ yarn workspace trello-client start
 yarn workspace trello-server build
 yarn workspace trello-server start
 ```
+
+## Run Mongo Express
+
+```bash
+docker-compose up -d
+docker logs mongo-express # to check
+```
+Type `admin:pass`
