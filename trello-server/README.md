@@ -54,3 +54,18 @@ See `utils/config.ts` and `package.json`
 ### debug
 
 See `index.ts` and `package.json`
+
+
+### Mongoose
+
+```bash
+yarn add -D @types/mongoose @types/mongoose-unique-validator
+yarn add mongoose mongoose-unique-validator
+```
+
+### Socket IO
+
+```bash
+yarn add -D @types/socket.io
+yarn add socket.io
+```
