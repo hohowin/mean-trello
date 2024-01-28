@@ -4,6 +4,8 @@ services:
     image: mongo:6.0.13
     container_name: mongodb
     restart: unless-stopped
+    ports:
+      - 27017:27017
     volumes:
       - ./mongodata:/data/db
     environment:

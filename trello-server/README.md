@@ -69,3 +69,15 @@ yarn add mongoose mongoose-unique-validator
 yarn add -D @types/socket.io
 yarn add socket.io
 ```
+
+---
+
+## Development
+
+### Start Server
+
+```
+docker-compose up -d
+yarn build
+yarn start
+```
