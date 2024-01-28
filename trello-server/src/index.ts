@@ -1,21 +1,16 @@
 import Debug from 'debug';
-import express from 'express';
-import {createServer} from 'http';
-import {Server} from 'socket.io';
+import { app } from './app';
+import { createServer } from 'http';
+import { Server } from 'socket.io';
 import mongoose from 'mongoose';
-import {PORT, DB_NAME} from './utils/config';
+import { PORT, DB_NAME } from './utils/config';
 
-const app = express();
 const httpServer = createServer(app);
 const io = new Server(httpServer);
 
 const debug = Debug("trello-server");
 const port = PORT || 4001;
 const dbName = DB_NAME;
-
-app.get("/", (_,res) => {
-    res.send("API is up")
-});
 
 io.on('connection', ()=> {
     console.log("connect");

@@ -79,5 +79,6 @@ yarn add socket.io
 ```
 docker-compose up -d
 yarn build
-yarn start
+yarn start #OR
+yarn debug
 ```
