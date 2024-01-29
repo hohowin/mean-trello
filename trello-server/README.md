@@ -59,8 +59,8 @@ See `index.ts` and `package.json`
 ### Mongoose
 
 ```bash
-yarn add -D @types/mongoose @types/mongoose-unique-validator
-yarn add mongoose mongoose-unique-validator
+yarn add -D @types/mongoose @types/mongoose-unique-validator @types/validator
+yarn add mongoose mongoose-unique-validator validator
 ```
 
 ### Socket IO
@@ -68,6 +68,13 @@ yarn add mongoose mongoose-unique-validator
 ```bash
 yarn add -D @types/socket.io
 yarn add socket.io
+```
+
+### Password
+
+```bash
+yarn add -D @types/bcryptjs
+yarn add bcryptjs
 ```
 
 ---
